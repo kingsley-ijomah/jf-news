@@ -12,15 +12,11 @@ class ArticleDetailView(generic.DetailView):
 
 
 class ArticleCreateView(generic.CreateView):
-    model = Article
-    fields = ["pub_date", "title", "content"]
-    success_url = "/"
+    pass
 
 
 class ArticleUpdateView(generic.UpdateView):
-    model = Article
-    fields = ["pub_date", "title", "content"]
-    success_url = "/"
+    pass
 
 
 class ArticleDeleteView(generic.DeleteView):
