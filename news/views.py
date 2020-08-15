@@ -8,7 +8,7 @@ class ArticleListView(generic.ListView):
 
 
 class ArticleDetailView(generic.DetailView):
-    pass
+    model = Article
 
 
 class ArticleCreateView(generic.CreateView):
@@ -24,4 +24,5 @@ class ArticleUpdateView(generic.UpdateView):
 
 
 class ArticleDeleteView(generic.DeleteView):
-    pass
+    model = Article
+    success_url = "/"
